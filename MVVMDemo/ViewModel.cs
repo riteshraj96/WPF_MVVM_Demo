@@ -20,9 +20,9 @@ namespace MVVMDemo
         static String connectionString = @"Data Source=RITESH-PC\SQLEXPRESS;Initial Catalog=SIT_Ritesh_DB;Integrated Security=True;";
         SqlConnection con;
         SqlCommand cmd;
-       // SqlDataAdapter adapter;
-       // DataSet ds;
-        //SqlDataReader reader;
+        SqlDataAdapter adapter;
+        DataSet ds;
+        SqlDataReader reader;
 
         public ObservableCollection<Student> FillCourseId
         {
@@ -33,6 +33,8 @@ namespace MVVMDemo
                 OnPropertyChanged("SystemStatusData");
             }
         }
+
+
 
         public Student Student
         {
@@ -98,13 +100,14 @@ namespace MVVMDemo
             {
 
             }
+            
         }
         public ViewModel()
         {
             Student = new Student();
             Students = new ObservableCollection<Student>();
             Students.CollectionChanged += new System.Collections.Specialized.NotifyCollectionChangedEventHandler(Students_CollectionChanged);
-
+            GetCourseIdFromDB();
         }
 
         void Students_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)

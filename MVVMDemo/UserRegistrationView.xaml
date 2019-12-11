@@ -27,9 +27,20 @@ xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Age" HorizontalAlignment="Center"/>
         <TextBox Grid.Row="1" Grid.Column="1" Width="100" HorizontalAlignment="Center" Text="{Binding Student.Age, Mode=TwoWay}"/>
         <Button Content="Submit" Command="{Binding SubmitCommand}" HorizontalAlignment="Right" Grid.Row="4" Grid.Column="0" RenderTransformOrigin="0.61,1.96" Margin="0,27.348,0,159.452"/>
-        <ComboBox Grid.Column="1" ItemsSource="{Binding FillCourseId}"
-                  Name="cmb_CourseIDName" HorizontalAlignment="Left" Margin="76,5,0,0" 
-                  Grid.Row="3" VerticalAlignment="Top" Width="120" Grid.RowSpan="2"/>
+        <ComboBox Grid.Column="1" ItemsSource="{Binding FillCourseId}"  Name="cmb_CourseIDName" HorizontalAlignment="Left" Margin="27.658,5,0,0" 
+                  Grid.Row="3" VerticalAlignment="Top" Width="168.342" Grid.RowSpan="2" DataContext="{Binding Source={StaticResource ViewModel}}" SelectionChanged="ComboBox_SelectionChanged" FontSize="8" IsReadOnly="True" >
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" >
+                        <TextBlock Text="{Binding Path=CourseName, Mode=TwoWay}"/>
+                        <TextBlock Text=" - "/>
+                        <TextBlock Text="{Binding Path=CourseID, Mode=TwoWay}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+
+        </ComboBox>
+
         <ListView ItemsSource="{Binding Students}" Grid.Row="4" Grid.Column="1" Width="200" 
                   Margin="27.657,34.948,24.342,159.452">
             <ListView.View >
