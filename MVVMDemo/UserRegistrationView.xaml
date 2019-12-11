@@ -44,8 +44,8 @@ xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 
         </ComboBox>
 
-        <ListView ItemsSource="{Binding Students}" Grid.Row="4" Grid.Column="1" Width="200" 
-                  Margin="10,84.174,42,110.226">
+        <ListView ItemsSource="{Binding Students}" Grid.Row="4" Grid.Column="1" ScrollViewer.CanContentScroll="False" 
+                 ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="0,84.174,10,110.226" MaxHeight="150">
             <ListView.View >
                 <GridView  >
                     <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="60"/>
@@ -54,7 +54,7 @@ xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                 </GridView>
             </ListView.View>
         </ListView>
-        
+
 
     </Grid>
 
