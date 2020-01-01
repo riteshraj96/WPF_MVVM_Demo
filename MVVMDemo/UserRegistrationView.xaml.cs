@@ -22,14 +22,9 @@ namespace MVVMDemo
         public UserRegistrationView()
         {
             InitializeComponent();
-            ViewModel vm;
+            ViewModel vm ;
             vm = (ViewModel)base.DataContext;
 
-
-        }
-
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
 
         }
     }

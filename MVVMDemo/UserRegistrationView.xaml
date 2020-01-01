@@ -4,7 +4,7 @@
 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:viewmodel="clr-namespace:MVVMDemo"
-    Title="Window1" Height="300" Width="300">
+    Title="Window1" Height="300" Width="575.851">
     <Window.Resources>
         <viewmodel:ViewModel x:Key="ViewModel"/>
         <viewmodel:DatetimeToDateConverter x:Key="MyConverter"/>
@@ -15,10 +15,7 @@ xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -28,34 +25,35 @@ xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         <TextBox Grid.Row="0" Grid.Column="1" Width="100" HorizontalAlignment="Center" Text="{Binding Student.Name, Mode=TwoWay}" Margin="76,0"/>
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Age" HorizontalAlignment="Center"/>
         <TextBox Grid.Row="1" Grid.Column="1" Width="100" HorizontalAlignment="Center" Text="{Binding Student.Age, Mode=TwoWay}"/>
-        <Button Content="Submit" Grid.Column="1" Command="{Binding SubmitCommand}"  HorizontalAlignment="Left" Margin="80.8,36.619,0,0" Grid.Row="4" VerticalAlignment="Top" Width="75"/>
-        <!--<Button Content="Submit" Command="{Binding SubmitCommand}" HorizontalAlignment="Right" Grid.Row="4" Grid.Column="1" RenderTransformOrigin="0.61,1.96" Margin="0,35.707,134.4,151.093"/>-->
-        <ComboBox Grid.Column="1" ItemsSource="{Binding FillCourseId}"  Name="cmb_CourseIDName" HorizontalAlignment="Left" Margin="27.658,5,0,0" 
-                  Grid.Row="3" VerticalAlignment="Top" Width="168.342" Grid.RowSpan="2" DataContext="{Binding Source={StaticResource ViewModel}}" SelectionChanged="ComboBox_SelectionChanged" FontSize="8" IsReadOnly="True" >
+        <Button Content="Submit" Command="{Binding SubmitCommand}" HorizontalAlignment="Right" Grid.Row="2" Grid.Column="0"/>
+
+        <ComboBox Grid.Column="1" ItemsSource="{Binding FillCourseId}"  Name="cmb_CourseIDName" HorizontalAlignment="Left" Margin="164.191,5,0,0" 
+                  Grid.Row="3" VerticalAlignment="Top" Width="168.342" Grid.RowSpan="2" DataContext="{Binding Source={StaticResource ViewModel}}"  FontSize="8" IsReadOnly="True" 
+                  SelectedValue="{Binding Student.SCourseIDName,Mode=TwoWay}" RenderTransformOrigin="1.431,0.77">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal" >
-                        <TextBlock Text="{Binding Path=CourseName, Mode=TwoWay}"/>
+                        <TextBlock Text="{Binding Path=CourseName, Mode=TwoWay}" FontSize="12"/>
                         <TextBlock Text=" - "/>
-                        <TextBlock Text="{Binding Path=CourseID, Mode=TwoWay}"/>
+                        <TextBlock Text="{Binding Path=CourseID, Mode=TwoWay}" FontSize="12"/>
                     </StackPanel>
                 </DataTemplate>
             </ComboBox.ItemTemplate>
 
         </ComboBox>
-
-        <ListView ItemsSource="{Binding Students}" Grid.Row="4" Grid.Column="1" ScrollViewer.CanContentScroll="False" 
-                 ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="0,84.174,10,110.226" MaxHeight="150">
+        <ListView ItemsSource="{Binding Students}" Grid.Row="4" Grid.Column="1" Margin="62.551,0,78.762,76.829"
+                  ScrollViewer.CanContentScroll="False" 
+                 ScrollViewer.VerticalScrollBarVisibility="Visible" Height="85.152" VerticalAlignment="Bottom">
             <ListView.View >
                 <GridView  >
                     <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="60"/>
                     <GridViewColumn  Header="Age" DisplayMemberBinding="{Binding Age}" Width="60"/>
                     <GridViewColumn  Header="Joining Date" DisplayMemberBinding="{Binding JoiningDate, Converter={StaticResource MyConverter}}" Width="80" />
+                    <GridViewColumn Header="Course Name" DisplayMemberBinding="{Binding SCourseIDName.CourseName}" Width="80"/>
+                    <GridViewColumn Header="CourseId" DisplayMemberBinding="{Binding SCourseIDName.CourseID}" Width="60"/>
                 </GridView>
             </ListView.View>
         </ListView>
-
-
     </Grid>
 
 </Window>

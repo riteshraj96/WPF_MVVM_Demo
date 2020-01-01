@@ -42,18 +42,33 @@ E:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo.csproj
 E:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo.csproj.CoreCompileInputs.cache
 E:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo.exe
 E:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo.pdb
-D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo\MVVMDemo\bin\Debug\MVVMDemo.exe
-D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo\MVVMDemo\bin\Debug\MVVMDemo.pdb
-D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo.csprojAssemblyReference.cache
-D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo\MVVMDemo\obj\Debug\UserRegistrationView.g.cs
-D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo\MVVMDemo\obj\Debug\App.g.cs
-D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo\MVVMDemo\obj\Debug\GeneratedInternalTypeHelper.g.cs
-D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo_MarkupCompile.cache
-D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo_MarkupCompile.lref
-D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo\MVVMDemo\obj\Debug\UserRegistrationView.baml
-D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo.g.resources
-D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo.Properties.Resources.resources
-D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo.csproj.GenerateResource.cache
-D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo.csproj.CoreCompileInputs.cache
-D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo.exe
-D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo.pdb
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo - Copy\MVVMDemo\bin\Debug\MVVMDemo.exe
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo - Copy\MVVMDemo\bin\Debug\MVVMDemo.pdb
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo - Copy\MVVMDemo\obj\Debug\MVVMDemo.csprojAssemblyReference.cache
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo - Copy\MVVMDemo\obj\Debug\UserRegistrationView.g.cs
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo - Copy\MVVMDemo\obj\Debug\App.g.cs
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo - Copy\MVVMDemo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo - Copy\MVVMDemo\obj\Debug\MVVMDemo_MarkupCompile.cache
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo - Copy\MVVMDemo\obj\Debug\MVVMDemo_MarkupCompile.lref
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo - Copy\MVVMDemo\obj\Debug\UserRegistrationView.baml
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo - Copy\MVVMDemo\obj\Debug\MVVMDemo.g.resources
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo - Copy\MVVMDemo\obj\Debug\MVVMDemo.Properties.Resources.resources
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo - Copy\MVVMDemo\obj\Debug\MVVMDemo.csproj.GenerateResource.cache
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo - Copy\MVVMDemo\obj\Debug\MVVMDemo.csproj.CoreCompileInputs.cache
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo - Copy\MVVMDemo\obj\Debug\MVVMDemo.exe
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo - Copy\MVVMDemo\obj\Debug\MVVMDemo.pdb
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo_working\MVVMDemo\bin\Debug\MVVMDemo.exe
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo_working\MVVMDemo\bin\Debug\MVVMDemo.pdb
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo_working\MVVMDemo\obj\Debug\MVVMDemo.csprojAssemblyReference.cache
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo_working\MVVMDemo\obj\Debug\UserRegistrationView.g.cs
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo_working\MVVMDemo\obj\Debug\App.g.cs
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo_working\MVVMDemo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo_working\MVVMDemo\obj\Debug\MVVMDemo_MarkupCompile.cache
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo_working\MVVMDemo\obj\Debug\MVVMDemo_MarkupCompile.lref
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo_working\MVVMDemo\obj\Debug\UserRegistrationView.baml
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo_working\MVVMDemo\obj\Debug\MVVMDemo.g.resources
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo_working\MVVMDemo\obj\Debug\MVVMDemo.Properties.Resources.resources
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo_working\MVVMDemo\obj\Debug\MVVMDemo.csproj.GenerateResource.cache
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo_working\MVVMDemo\obj\Debug\MVVMDemo.csproj.CoreCompileInputs.cache
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo_working\MVVMDemo\obj\Debug\MVVMDemo.exe
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo_working\MVVMDemo\obj\Debug\MVVMDemo.pdb
