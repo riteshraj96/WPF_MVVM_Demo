@@ -72,3 +72,18 @@ D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo_working\MVVMDemo\obj\Debug\MVVMDem
 D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo_working\MVVMDemo\obj\Debug\MVVMDemo.csproj.CoreCompileInputs.cache
 D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo_working\MVVMDemo\obj\Debug\MVVMDemo.exe
 D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo_working\MVVMDemo\obj\Debug\MVVMDemo.pdb
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\bin\Debug\MVVMDemo.exe
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\bin\Debug\MVVMDemo.pdb
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\obj\Debug\View\UserRegistrationView.g.cs
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\obj\Debug\App.g.cs
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\obj\Debug\MVVMDemo_MarkupCompile.cache
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\obj\Debug\MVVMDemo_MarkupCompile.lref
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\obj\Debug\View\UserRegistrationView.baml
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\obj\Debug\MVVMDemo.g.resources
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\obj\Debug\MVVMDemo.Properties.Resources.resources
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\obj\Debug\MVVMDemo.csproj.GenerateResource.cache
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\obj\Debug\MVVMDemo.csproj.CoreCompileInputs.cache
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\obj\Debug\MVVMDemo.exe
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\obj\Debug\MVVMDemo.pdb
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\obj\Debug\MVVMDemo.csprojAssemblyReference.cache
