@@ -1,13 +1,13 @@
 ﻿<Window x:Class="MVVMDemo.UserRegistrationView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    
+    xmlns:v="clr-namespace:MVVMDemo"
 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:viewmodel="clr-namespace:MVVMDemo"
     Title="Registration Window" Height="300" Width="575.851">
     <Window.Resources>
-        
+
         <viewmodel:ViewModel x:Key="ViewModel"/>
         <viewmodel:DatetimeToDateConverter x:Key="MyConverter"/>
     </Window.Resources>
@@ -28,7 +28,9 @@ xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Age" HorizontalAlignment="Center"/>
         <TextBox Grid.Row="1" Grid.Column="1" Width="100" HorizontalAlignment="Center" Text="{Binding Student.Age, Mode=TwoWay}"/>
         <Button Content="Submit" Command="{Binding SubmitCommand}" HorizontalAlignment="Right" Grid.Row="2" Grid.Column="0"/>
-
+        <Button Content="Export to excel" Grid.Column="1" HorizontalAlignment="Left" Margin="10,6.45,0,0" Grid.Row="4" 
+                VerticalAlignment="Top" Width="85.281" RenderTransformOrigin="0.185,0.694"
+                v:ListViewExcelExporterExtension.ExcelExporter="{Binding ElementName=lstStudentData}"/>
         <ComboBox Grid.Column="1" ItemsSource="{Binding FillCourseId}"  Name="cmb_CourseIDName" HorizontalAlignment="Left" Margin="164.191,5,0,0" 
                   Grid.Row="3" VerticalAlignment="Top" Width="168.342" Grid.RowSpan="2" DataContext="{Binding Source={StaticResource ViewModel}}"  FontSize="8" IsReadOnly="True" 
                   SelectedValue="{Binding Student.SCourseIDName,Mode=TwoWay}" RenderTransformOrigin="1.431,0.77">
@@ -43,19 +45,20 @@ xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
             </ComboBox.ItemTemplate>
 
         </ComboBox>
-        <ListView ItemsSource="{Binding Students}" Grid.Row="4" Grid.Column="1" Margin="62.551,0,78.762,76.829"
+        <ListView x:Name="lstStudentData" ItemsSource="{Binding Students}" Grid.Row="4" Grid.Column="1" Margin="0,0,31.098,10"
                   ScrollViewer.CanContentScroll="False" 
-                 ScrollViewer.VerticalScrollBarVisibility="Visible" Height="85.152" VerticalAlignment="Bottom">
+                 ScrollViewer.VerticalScrollBarVisibility="Visible" Height="151.981" VerticalAlignment="Bottom">
             <ListView.View >
                 <GridView  >
-                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="60"/>
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="80"/>
                     <GridViewColumn  Header="Age" DisplayMemberBinding="{Binding Age}" Width="60"/>
-                    <GridViewColumn  Header="Joining Date" DisplayMemberBinding="{Binding JoiningDate, Converter={StaticResource MyConverter}}" Width="80" />
-                    <GridViewColumn Header="Course Name" DisplayMemberBinding="{Binding SCourseIDName.CourseName}" Width="80"/>
+                    <GridViewColumn  Header="Joining Date" DisplayMemberBinding="{Binding JoiningDate, Converter={StaticResource MyConverter}}" Width="90" />
+                    <GridViewColumn Header="Course Name" DisplayMemberBinding="{Binding SCourseIDName.CourseName}" Width="100"/>
                     <GridViewColumn Header="CourseId" DisplayMemberBinding="{Binding SCourseIDName.CourseID}" Width="60"/>
                 </GridView>
             </ListView.View>
         </ListView>
+        
     </Grid>
 
 </Window>

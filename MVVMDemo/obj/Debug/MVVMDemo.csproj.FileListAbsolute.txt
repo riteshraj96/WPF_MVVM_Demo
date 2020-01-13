@@ -87,3 +87,8 @@ D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\obj\Debug\MVVMD
 D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\obj\Debug\MVVMDemo.exe
 D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\obj\Debug\MVVMDemo.pdb
 D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\obj\Debug\MVVMDemo.csprojAssemblyReference.cache
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\bin\Debug\office.dll
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\bin\Debug\stdole.dll
+D:\SQL ,C# Programs\C#\Demo Programs\MVVMDemo v1 - Copy\MVVMDemo\obj\Debug\MVVMDemo.csproj.CopyComplete

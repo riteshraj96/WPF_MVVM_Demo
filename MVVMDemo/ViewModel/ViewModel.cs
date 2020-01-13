@@ -7,10 +7,11 @@ using System.Collections.ObjectModel;
 using System.Data.SqlClient;
 using System.Data;
 using System.ComponentModel;
+using Microsoft.Office.Interop.Excel;
 
 namespace MVVMDemo
 {
-    public class ViewModel : ViewModelBase
+    public class ViewModel : ViewModelBase,IEnhancedListObject
     {
         static String connectionString = @"Data Source=RITESH-PC\SQLEXPRESS;Initial Catalog=SIT_Ritesh_DB;Integrated Security=True;";
         SqlConnection con;
@@ -115,7 +116,7 @@ namespace MVVMDemo
                 con.Open();
                 cmd = new SqlCommand("select * from dev_Course", con);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
+                System.Data.DataTable dt = new System.Data.DataTable();
                 adapter.Fill(dt);
                 // Student Student = new Student();
 
@@ -160,6 +161,38 @@ namespace MVVMDemo
             var handler = PropertyChanged;
             if (handler != null)
                 handler(this, new PropertyChangedEventArgs(propertyname));
+        }
+        /// <summary>
+        /// Write the header into the Excel sheet
+        /// </summary>
+        /// <param name="worksheet"></param>
+        /// <param name="nRow"></param>
+        /// <param name="nColumn"></param>
+        public void WriteHeaderIntoExcelSheet(Worksheet worksheet, ref int nRow, ref int nColumn)
+        {
+            worksheet.Cells[nRow, nColumn] = "NAME";
+            worksheet.Cells[nRow, nColumn + 1] = "AGE";
+            worksheet.Cells[nRow, nColumn + 2] = "JOINING DATE";
+            worksheet.Cells[nRow, nColumn + 3] = "COURSE NAME";
+            worksheet.Cells[nRow, nColumn + 4] = "COURSE ID";
+            nRow++;
+        }
+
+        /// <summary>
+        /// Write the Companies data into Excel sheet
+        /// </summary>
+        /// <param name="worksheet"></param>
+        /// <param name="nRow"></param>
+        /// <param name="nColumn"></param>
+        /// <returns></returns>
+        public void WriteDataIntoExcelSheet(Worksheet worksheet, ref int nRow, ref int nColumn)
+        {
+            worksheet.Cells[nRow, nColumn] = Student.Name;
+            worksheet.Cells[nRow, nColumn + 1] = Student.Age;
+            worksheet.Cells[nRow, nColumn + 2] = Student.JoiningDate;
+            worksheet.Cells[nRow, nColumn + 3] = Student.SCourseIDName.CourseName;
+            worksheet.Cells[nRow, nColumn + 4] = Student.SCourseIDName.CourseID;
+            nRow++;
         }
     }
 }
